@@ -20,12 +20,12 @@ a.then((jsonData) => {
         table.insertAdjacentHTML(
             "beforeend",
             `<tr>
-                <td>${row.meta.chapter}</td>
                 <td>${row.meta.title}</td>
-                <td>${row.data.E}</td>
-                <td>${row.data.N}</td>
-                <td>${row.data.H}</td>
-                <td>${row.data.L}</td>
+                <td>${row.data.Past.const}</td>
+                <td>${row.data.Present.const}</td>
+                <td>${row.data.Future.const}</td>
+                <td>${row.data.Eternal.const}</td>
+                <td>${row.data.Beyond.const}</td>
                 <td>${bpmText}</td>
             </tr>`
         );
