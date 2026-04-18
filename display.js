@@ -5,6 +5,10 @@ async function data() {
     return await json.json();
 };
 
+function getConst(row, key) {
+    return row.data?.[key]?.const ?? "";
+}
+
 var a = data();
 
 a.then((jsonData) => {
@@ -17,21 +21,15 @@ a.then((jsonData) => {
             ? bpmMin
             : `${bpmMin}～${bpmMax}`;
 
-        const past = row.data?.Past?.const ?? "";
-        const present = row.data?.Present?.const ?? "";
-        const future = row.data?.Future?.const ?? "";
-        const eternal = row.data?.Eternal?.const ?? "";
-        const beyond = row.data?.Beyond?.const ?? "";
-
         table.insertAdjacentHTML(
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
-                <td>${past}</td>
-                <td>${present}</td>
-                <td>${future}</td>
-                <td>${eternal}</td>
-                <td>${beyond}</td>
+                <td>${getConst(row, "Past")}</td>
+                <td>${getConst(row, "Present")}</td>
+                <td>${getConst(row, "Future")}</td>
+                <td>${getConst(row, "Eternal")}</td>
+                <td>${getConst(row, "Beyond")}</td>
                 <td>${bpmText}</td>
             </tr>`
         );
