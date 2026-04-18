@@ -17,18 +17,23 @@ a.then((jsonData) => {
             ? bpmMin
             : `${bpmMin}～${bpmMax}`;
 
+        const past = row.data?.Past?.const ?? "";
+        const present = row.data?.Present?.const ?? "";
+        const future = row.data?.Future?.const ?? "";
+        const eternal = row.data?.Eternal?.const ?? "";
+        const beyond = row.data?.Beyond?.const ?? "";
+
         table.insertAdjacentHTML(
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
-                <td>${row.data.Past.const}</td>
-                <td>${row.data.Present.const}</td>
-                <td>${row.data.Future.const}</td>
-                <td>${row.data.Eternal.const}</td>
-                <td>${row.data.Beyond.const}</td>
+                <td>${past}</td>
+                <td>${present}</td>
+                <td>${future}</td>
+                <td>${eternal}</td>
+                <td>${beyond}</td>
                 <td>${bpmText}</td>
             </tr>`
         );
     });
 });
-
