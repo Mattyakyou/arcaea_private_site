@@ -1,0 +1,81 @@
+html {
+    background-color: #000000;
+}
+
+
+
+.text {
+    font-size: 15px;
+    color: greenyellow;
+}
+
+.table1 {
+    width: 720px;
+    border-collapse: collapse;
+    float: left;
+    margin-right: 50px;
+}
+
+th,
+td {
+    border: 1px solid #ffffff;
+    padding: 5px;
+}
+
+.pack{
+    width: 80px;
+}
+
+.diff{
+    width: 30px;
+}
+
+.bpm {
+    width: 80px;
+}
+
+.select {
+    float: left;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px 20px;
+}
+
+.generate {
+    border-color: #ffffff;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: greenyellow;
+    background-color: #000000;
+}
+
+.generate:hover {
+    background-color: #222222;
+}
+
+.table2 {
+    width: 720px;
+    margin-top: 15px;
+    border-collapse: collapse;
+    margin-right: 50px;
+}
+
+.all_on, .all_off{
+    border-color: #ffffff;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: greenyellow;
+    background-color: #000000;
+}
+
+.all_on:hover, .all_off:hover {
+    background-color: #222222;
+}
