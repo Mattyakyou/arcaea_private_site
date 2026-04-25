@@ -2,15 +2,22 @@ function setupSort() {
     const tableEl = document.querySelector(".table1");
     const headers = tableEl.querySelectorAll("th");
 
-    let sortState = {};
+    let lastCol = null;     // 最後に押した列
+    let asc = false;        // 現在の順序（false = 降順スタート）
 
     headers.forEach((th, colIndex) => {
         th.addEventListener("click", () => {
             const tbody = tableEl.querySelector("tbody");
             const rows = Array.from(tbody.querySelectorAll("tr"));
 
-            sortState[colIndex] = !sortState[colIndex];
-            const asc = sortState[colIndex];
+            // 同じ列かどうか判定
+            if (lastCol === colIndex) {
+                asc = !asc; // 同じ列なら反転
+            } else {
+                asc = false; // 別列なら必ず降順スタート
+            }
+
+            lastCol = colIndex;
 
             rows.sort((a, b) => {
                 let A = a.children[colIndex].innerText.trim();
@@ -23,12 +30,12 @@ function setupSort() {
                 const numB = Number(B);
 
                 if (!isNaN(numA) && !isNaN(numB)) {
-                    return asc ? numB - numA : numA - numB;
+                    return asc ? numA - numB : numB - numA;
                 }
 
                 return asc
-                    ? B.localeCompare(A, "ja")
-                    : A.localeCompare(B, "ja");
+                    ? A.localeCompare(B, "ja")
+                    : B.localeCompare(A, "ja");
             });
 
             tbody.innerHTML = "";
