@@ -23,12 +23,12 @@ function setupSort() {
                 const numB = Number(B);
 
                 if (!isNaN(numA) && !isNaN(numB)) {
-                    return asc ? numA - numB : numB - numA;
+                    return asc ? numB - numA : numA - numB;
                 }
 
                 return asc
-                    ? A.localeCompare(B, "ja")
-                    : B.localeCompare(A, "ja");
+                    ? B.localeCompare(A, "ja")
+                    : A.localeCompare(B, "ja");
             });
 
             tbody.innerHTML = "";
@@ -37,7 +37,7 @@ function setupSort() {
     });
 }
 
-const tbody = document.querySelector("tbody"); 
+const tbody = document.querySelector("tbody");
 
 async function data() {
     const json = await fetch("https://mattyakyou.github.io/ArcaeaData/data.json");
@@ -65,7 +65,7 @@ a.then((jsonData) => {
             ? bpmMin
             : `${bpmMin}～${bpmMax}`;
 
-        tbody.insertAdjacentHTML(   
+        tbody.insertAdjacentHTML(
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
