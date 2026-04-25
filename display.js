@@ -1,4 +1,43 @@
-const table = document.querySelector("tbody");
+function setupSort() {
+    const tableEl = document.querySelector(".table1");
+    const headers = tableEl.querySelectorAll("th");
+
+    let sortState = {};
+
+    headers.forEach((th, colIndex) => {
+        th.addEventListener("click", () => {
+            const tbody = tableEl.querySelector("tbody");
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+
+            sortState[colIndex] = !sortState[colIndex];
+            const asc = sortState[colIndex];
+
+            rows.sort((a, b) => {
+                let A = a.children[colIndex].innerText.trim();
+                let B = b.children[colIndex].innerText.trim();
+
+                if (A.includes("～")) A = A.split("～")[1];
+                if (B.includes("～")) B = B.split("～")[1];
+
+                const numA = Number(A);
+                const numB = Number(B);
+
+                if (!isNaN(numA) && !isNaN(numB)) {
+                    return asc ? numA - numB : numB - numA;
+                }
+
+                return asc
+                    ? A.localeCompare(B, "ja")
+                    : B.localeCompare(A, "ja");
+            });
+
+            tbody.innerHTML = "";
+            rows.forEach(row => tbody.appendChild(row));
+        });
+    });
+}
+
+const tbody = document.querySelector("tbody"); 
 
 async function data() {
     const json = await fetch("https://mattyakyou.github.io/ArcaeaData/data.json");
@@ -26,7 +65,7 @@ a.then((jsonData) => {
             ? bpmMin
             : `${bpmMin}～${bpmMax}`;
 
-        table.insertAdjacentHTML(
+        tbody.insertAdjacentHTML(   
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
@@ -39,4 +78,6 @@ a.then((jsonData) => {
             </tr>`
         );
     });
+
+    setupSort();
 });
