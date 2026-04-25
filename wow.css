@@ -10,9 +10,8 @@ html {
 }
 
 .table1 {
-    width: 540px;
+    width: 720px;
     border-collapse: collapse;
-    float: left;
     margin-right: 50px;
 }
 
@@ -33,8 +32,3 @@ td {
 .bpm {
     width: 80px;
 }
-
-.familiar {
-    float: left;
-}
-
