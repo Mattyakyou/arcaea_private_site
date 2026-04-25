@@ -6,7 +6,12 @@ async function data() {
 };
 
 function getConst(row, key) {
-    return row.data?.[key]?.const ?? "";
+    return row.data?.[key]?.const;
+}
+
+function formatConst(val) {
+    if (val === undefined || val === null) return "";
+    return Number(val).toFixed(1);
 }
 
 var a = data();
@@ -25,11 +30,11 @@ a.then((jsonData) => {
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
-                <td>${getConst(row, "Past")}</td>
-                <td>${getConst(row, "Present")}</td>
-                <td>${getConst(row, "Future")}</td>
-                <td>${getConst(row, "Eternal")}</td>
-                <td>${getConst(row, "Beyond")}</td>
+                <td>${formatConst(getConst(row, "Past"))}</td>
+                <td>${formatConst(getConst(row, "Present"))}</td>
+                <td>${formatConst(getConst(row, "Future"))}</td>
+                <td>${formatConst(getConst(row, "Eternal"))}</td>
+                <td>${formatConst(getConst(row, "Beyond"))}</td>
                 <td>${bpmText}</td>
             </tr>`
         );
