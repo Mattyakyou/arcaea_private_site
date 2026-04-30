@@ -62,7 +62,7 @@ function formatConst(val) {
 
 function time_fix(val) {
     if (val >= 60) {
-        return Math.trunc(val / 60) + ":" + (val - Math.trunc(val / 60));
+        return Math.trunc(val / 60) + ":" + (val - Math.trunc(val / 60)*60);
     } else {
         return "0:" + val;
     }
