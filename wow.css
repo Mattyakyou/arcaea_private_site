@@ -21,6 +21,10 @@ td {
     padding: 5px;
 }
 
+.composer{
+    width: 300px;
+}
+
 .pack{
     width: 80px;
 }
