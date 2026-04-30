@@ -60,6 +60,14 @@ function formatConst(val) {
     return Number(val).toFixed(1);
 }
 
+function time_fix(val) {
+    if (val >= 60) {
+        return Math.trunc(val / 60) + ":" + (val - Math.trunc(val / 60));
+    } else {
+        return "0:" + val;
+    }
+}
+
 var a = data();
 
 a.then((jsonData) => {
@@ -76,12 +84,14 @@ a.then((jsonData) => {
             "beforeend",
             `<tr>
                 <td>${row.meta.title}</td>
+                <td>${row.meta.composer}</td>
                 <td>${formatConst(getConst(row, "Past"))}</td>
                 <td>${formatConst(getConst(row, "Present"))}</td>
                 <td>${formatConst(getConst(row, "Future"))}</td>
                 <td>${formatConst(getConst(row, "Eternal"))}</td>
                 <td>${formatConst(getConst(row, "Beyond"))}</td>
                 <td>${bpmText}</td>
+                <td>${time_fix(row.meta.length)}</td>
             </tr>`
         );
     });
