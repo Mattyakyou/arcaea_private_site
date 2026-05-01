@@ -138,7 +138,7 @@ async function renderTable() {
         thead.innerHTML = `
         <tr>
             <th class="pack">パック</th>
-            <th>曲名</th>
+            <th class="title">曲名</th>
             <th class="composer">作曲</th>
             <th class="chart">chart</th>
             <th class="level">レベル</th>

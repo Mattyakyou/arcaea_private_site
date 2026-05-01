@@ -32,10 +32,7 @@ html {
 .table1 {
     width: 1320px;
     border-collapse: collapse;
-}
-
-.thead_all {
-    width: 1320px;
+    table-layout: fixed;
 }
 
 th,
@@ -48,6 +45,14 @@ td {
     width: 300px;
 }
 
+.length{
+    width: 50px;
+}
+
+.title {
+    width: 320px;
+}
+
 .pack{
     width: 80px;
 }
@@ -56,19 +61,20 @@ td {
     writing-mode: vertical-rl;
     text-align: center;
     white-space: nowrap;
-    width: 20px;
+    width: 35px;
 }
 
 .bpm {
     width: 70px;
 }
 
+
 .chart {
     width: 120px;
 }
 
 .side {
-    width: 60px;
+    width: 65px;
 }
 
 .version{
