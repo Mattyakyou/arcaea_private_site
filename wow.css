@@ -70,6 +70,13 @@ td {
     height: 80px;
 }
 
+.diff_in {
+    white-space: nowrap;
+    width: 35px;
+    min-width: 35px;
+    max-width: 35px;
+}
+
 .bpm {
     width: 70px;
 }
