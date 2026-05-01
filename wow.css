@@ -1,8 +1,10 @@
 html {
     background-color: #000000;
-    overflow-x: auto;
 }
 
+.all {
+    overflow-x: auto;
+}
 
 .collect {
     display: flex;
