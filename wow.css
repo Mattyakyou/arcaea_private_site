@@ -65,6 +65,8 @@ td {
     text-align: center;
     white-space: nowrap;
     width: 35px;
+    min-width: 35px;
+    max-width: 35px;
     height: 80px;
 }
 
