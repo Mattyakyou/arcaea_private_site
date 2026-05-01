@@ -145,7 +145,7 @@ async function renderTable() {
             <th class="diff">定数</th>
             <th class="diff">ノーツ数</th>
             <th class="version">バージョン</th>
-            <th class="diff">リリース日</th>
+            <th class="release">リリース日</th>
             <th class="side">side</th>
             <th class="bpm">BPM</th>
             <th class="length">Length</th>

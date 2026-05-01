@@ -5,20 +5,20 @@ html {
 
 
 .collect {
-  display: flex;
+    display: flex;
 }
 
 .tab {
-  padding: 10px 20px;
-  cursor: pointer;
-  background: #2c2f33;
-  color: white;
-  border: none;
-  border-bottom: 3px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #2c2f33;
+    color: white;
+    border: none;
+    border-bottom: 3px solid transparent;
 }
 
 .tab.active {
-  border-bottom: 3px solid greenyellow;
+    border-bottom: 3px solid greenyellow;
 }
 
 
@@ -41,11 +41,11 @@ td {
     padding: 5px;
 }
 
-.composer{
+.composer {
     width: 300px;
 }
 
-.length{
+.length {
     width: 50px;
 }
 
@@ -53,11 +53,12 @@ td {
     width: 320px;
 }
 
-.pack{
+.pack {
     width: 80px;
 }
 
-.diff, .level{
+.diff,
+.level {
     writing-mode: vertical-rl;
     text-align: center;
     white-space: nowrap;
@@ -77,9 +78,13 @@ td {
     width: 65px;
 }
 
-.version{
+.version {
     writing-mode: vertical-rl;
     text-align: center;
     white-space: nowrap;
     width: 50px;
+}
+
+.release {
+    width: 40px;
 }
