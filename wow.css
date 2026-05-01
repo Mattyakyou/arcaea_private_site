@@ -68,19 +68,13 @@ td {
     min-width: 35px;
     max-width: 35px;
     height: 80px;
-    padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
 .diff_in {
-    white-space: nowrap;
     width: 35px;
     min-width: 35px;
     max-width: 35px;
-    padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 .bpm {
