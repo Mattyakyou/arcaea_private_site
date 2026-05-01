@@ -68,6 +68,7 @@ td {
     min-width: 35px;
     max-width: 35px;
     height: 80px;
+    padding: 0;
 }
 
 .diff_in {
@@ -75,6 +76,7 @@ td {
     width: 35px;
     min-width: 35px;
     max-width: 35px;
+    padding: 0;
 }
 
 .bpm {
