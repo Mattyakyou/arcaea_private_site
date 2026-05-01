@@ -4,15 +4,38 @@ html {
 
 
 
+.collect {
+  display: flex;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #2c2f33;
+  color: white;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+  border-bottom: 3px solid greenyellow;
+}
+
+
+
 .text {
     font-size: 15px;
     color: greenyellow;
+    padding-top: 5px;
 }
 
 .table1 {
     width: 1320px;
     border-collapse: collapse;
-    margin-right: 50px;
+}
+
+.thead_all {
+    width: 1320px;
 }
 
 th,
@@ -29,10 +52,28 @@ td {
     width: 80px;
 }
 
-.diff{
-    width: 30px;
+.diff, .level{
+    writing-mode: vertical-rl;
+    text-align: center;
+    white-space: nowrap;
+    width: 20px;
 }
 
 .bpm {
-    width: 80px;
+    width: 70px;
+}
+
+.chart {
+    width: 120px;
+}
+
+.side {
+    width: 60px;
+}
+
+.version{
+    writing-mode: vertical-rl;
+    text-align: center;
+    white-space: nowrap;
+    width: 50px;
 }

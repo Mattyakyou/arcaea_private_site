@@ -3,9 +3,17 @@
 <meta charset="UTF-8">
 
 <body class="all">
+    <div class="collect">
+        <button class="tab active" onclick="switchTab(0)">All</button>
+        <button class="tab" onclick="switchTab(1)">Past</button>
+        <button class="tab" onclick="switchTab(2)">Present</button>
+        <button class="tab" onclick="switchTab(3)">Future</button>
+        <button class="tab" onclick="switchTab(4)">Eternal</button>
+        <button class="tab" onclick="switchTab(5)">Beyond</button>
+    </div>
     <div class="text">
         <table class="table1">
-            <thead>
+            <thead class="thead_all">
                 <tr>
                     <th>曲名</th>
                     <th class="composer">作曲</th>
@@ -19,7 +27,7 @@
                 </tr>
             </thead>
             <tbody></tbody>
-            <script src="display.js"></script>
         </table>
     </div>
+    <script src="display.js"></script>
 </body>
