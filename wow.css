@@ -63,7 +63,7 @@ td {
     text-align: center;
     white-space: nowrap;
     width: 35px;
-    height: clamp(80px, 8vw, 100px);
+    height: 80px;
 }
 
 .bpm {
