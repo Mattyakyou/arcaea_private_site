@@ -187,9 +187,9 @@ async function renderTable() {
                     <td>${row.meta.title}</td>
                     <td>${row.meta.composer}</td>
                     <td>${row.data[currentMode].chart}</td>
-                    <td class="diff_in">${row.data[currentMode].level}</td>
-                    <td class="diff_in">${formatConst(getConst(row, currentMode))}</td>
-                    <td class="diff_in">${row.data[currentMode].notes}</td>
+                    <td>${row.data[currentMode].level}</td>
+                    <td>${formatConst(getConst(row, currentMode))}</td>
+                    <td>${row.data[currentMode].notes}</td>
                     <td>${row.meta.update_version}</td>
                     <td>${row.meta.release}</td>
                     <td>${row.meta.side}</td>
