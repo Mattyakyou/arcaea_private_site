@@ -35,7 +35,6 @@ html {
 .table1 {
     width: 1320px;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 th,
