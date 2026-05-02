@@ -1,5 +1,6 @@
 html {
     background-color: #000000;
+    -webkit-text-size-adjust: 100%;
 }
 
 .all {
@@ -64,10 +65,10 @@ td {
     writing-mode: vertical-rl;
     text-align: center;
     white-space: nowrap;
-    width: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    height: 80px;
+    inline-size: 80px;
+    block-size: 35px;
+    min-inline-size: 80px;
+    max-inline-size: 80px;
 }
 
 .diff_in {
