@@ -67,8 +67,8 @@ td {
     white-space: nowrap;
     inline-size: 80px;
     block-size: 35px;
-    min-inline-size: 80px;
-    max-inline-size: 80px;
+    min-inline-size: 35px;
+    max-inline-size: 35px;
 }
 
 .diff_in {
