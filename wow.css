@@ -46,7 +46,6 @@ td {
     width: 320px;
     min-width: 320px;
     max-width: 320px;
-
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -56,14 +55,18 @@ td {
     width: 660px;
     min-width: 660px;
     max-width: 660px;
-
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .composer {
     height: 80px;
+    padding: 0;
     width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .length {
