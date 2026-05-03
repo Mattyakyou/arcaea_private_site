@@ -41,11 +41,11 @@ td {
 }
 
 .title {
-    width: 320px;
+    width: 100%;
 }
 
 .title1 {
-    width: 660px;
+    width: 100%;
 }
 
 .composer {
