@@ -80,13 +80,14 @@ td {
 .diff,
 .level {
     writing-mode: vertical-rl;
-    padding: 0;
     width: 35px;
     min-width: 35px;
     max-width: 35px;
-
-    box-sizing: border-box;
+    padding: 0;
     overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1;
 }
 
 .notes {
