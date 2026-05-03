@@ -36,6 +36,7 @@ html {
     width: 1320px;
     border-collapse: collapse;
     table-layout: fixed;
+    overflow-x: auto;
 }
 
 th,
@@ -45,6 +46,7 @@ td {
 }
 
 .composer {
+    height: 80px;
     width: 300px;
 }
 
@@ -64,22 +66,17 @@ td {
 .level {
     writing-mode: vertical-rl;
     width: 35px;
-    min-width: 35px;
-    max-width: 35px;
-    height: 80px;
-    padding: 0 !important;
-    line-height: 1;
-    font-size: 15px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 th.diff {
     width: 35px;
     min-width: 35px;
     max-width: 35px;
+}
+
+.notes{
+    writing-mode: vertical-rl;
+    width: 40px;
 }
 
 .bpm {

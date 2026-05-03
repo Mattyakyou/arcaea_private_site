@@ -143,7 +143,7 @@ async function renderTable() {
             <th class="chart">chart</th>
             <th class="level">レベル</th>
             <th class="diff">定数</th>
-            <th class="diff">ノーツ数</th>
+            <th class="notes">ノーツ数</th>
             <th class="version">バージョン</th>
             <th class="release">リリース日</th>
             <th class="side">side</th>
