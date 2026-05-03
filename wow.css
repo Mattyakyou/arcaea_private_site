@@ -3,13 +3,6 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-.all {
-    overflow-x: auto;
-}
-
-.collect {
-    display: flex;
-}
 
 .tab {
     padding: 10px 20px;
@@ -35,8 +28,6 @@ html {
 .table1 {
     width: 1320px;
     border-collapse: collapse;
-    table-layout: fixed;
-    overflow-x: auto;
 }
 
 th,
@@ -54,7 +45,7 @@ td {
     width: 50px;
 }
 
-.title1{
+.title1 {
     width: 660px;
 }
 
