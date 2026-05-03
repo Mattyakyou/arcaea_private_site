@@ -4,6 +4,10 @@ html {
 }
 
 
+.collect {
+    display: flex;
+}
+
 .tab {
     padding: 10px 20px;
     cursor: pointer;
@@ -36,6 +40,14 @@ td {
     padding: 5px;
 }
 
+.title {
+    width: 320px;
+}
+
+.title1 {
+    width: 660px;
+}
+
 .composer {
     height: 80px;
     width: 300px;
@@ -43,14 +55,6 @@ td {
 
 .length {
     width: 50px;
-}
-
-.title1 {
-    width: 660px;
-}
-
-.title {
-    width: 320px;
 }
 
 .pack {
