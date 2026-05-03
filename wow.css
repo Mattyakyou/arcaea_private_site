@@ -33,7 +33,10 @@ html {
     width: 1320px;
     border-collapse: collapse;
     table-layout: fixed;
-    font-family: sans-serif;
+    font-family:
+            "Noto Sans JP",
+            "Hiragino Sans",
+            sans-serif;
 }
 
 th,
