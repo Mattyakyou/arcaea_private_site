@@ -123,7 +123,7 @@ async function renderTable() {
     if (currentMode === "All") {
         thead.innerHTML = `
         <tr>
-            <th>曲名</th>
+            <th class="title1">曲名</th>
             <th class="composer">作曲</th>
             <th class="diff">Past</th>
             <th class="diff">Present</th>
